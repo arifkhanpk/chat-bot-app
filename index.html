@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .chat {
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-image: url(./chat\ bot\ img3.jpeg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        border-right: 3px solid rgb(90, 185, 90);
+        border-left: 3px solid rgb(90, 185, 90);
+    }
+
+
+
+    li {
+        height: 30px;
+        background-color: rgb(130, 190, 170);
+        list-style: none;
+        border-radius: 25px 10px;
+        padding-left: 8px;
+        padding-top: 5px;
+        margin-top: 8px;
+        margin-left: -20px;
+        margin-right: 30px;
+    }
+
+    .user {
+        margin-left: 20px;
+        margin-right: -10px;
+        margin-top: 8px;
+        padding-right: 10px;
+        padding-top: 5px;
+        text-align: right;
+        height: 30px;
+        background-color: rgb(129, 193, 209);
+        list-style: none;
+    }
+
+    .heading {
+        padding-top: 50px;
+        color: blue;
+        
+    }
+ 
+</style>
+
+
+<body>
+
+    <div class="w3-container w3-center w3-animate-zoom">
+        <h1 class="heading"><strong><center>Chat Bot App</center></strong></h1>
+    </div>
+    <div class="center">
+
+        <div class="chat">
+
+            <ul class="messageList">
+            </ul>
+
+            <div class="controls">
+
+                <input style="border-radius: 10px;height: 30px;width:170px;border: 2px solid rgb(238, 10, 10);padding-left: 10px;margin-top: 170px;margin-left: -10px;"
+                    placeholder="Input your message" id="message" type="text">
+                <button
+                    style="margin-left: 170px;margin-top: -90px; height: 30px;width: 100px; background-color: rgb(207, 160, 88);border: none;border-radius: 10px;"
+                    id="send"><b>Send</b></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
